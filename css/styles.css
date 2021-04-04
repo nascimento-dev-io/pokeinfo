@@ -240,3 +240,17 @@ body {
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .info .info-details {
+    height: auto;
+  }
+
+  .info .info-details fieldset {
+    width: 40%;
+  }
+
+  .info .info-details fieldset:nth-child(6) {
+    height: 80px;
+  }
+}
