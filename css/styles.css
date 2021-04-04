@@ -1,0 +1,242 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+
+  background-color: #fccb39;
+  color: rgb(17, 17, 17);
+}
+input,
+button,
+textarea,
+a {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1100px;
+  width: 900px;
+  height: 90%;
+
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* .container h1 {
+  font-size: 2.5rem;
+} */
+
+.container .font-meme {
+  margin-top: 15px;
+}
+
+.container .search-group {
+  width: 90%;
+  height: 100px;
+
+  border-radius: 15px 15px 0 0;
+  margin-top: 15px;
+
+  padding: 10px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ffc312;
+}
+
+.search-group #search-text {
+  max-width: 70%;
+  height: 30px;
+
+  font-size: 1.2rem;
+
+  border-radius: 5px 0 0 5px;
+  flex: 1;
+
+  color: rgb(17, 17, 17);
+
+  border: none;
+  outline: none;
+
+  padding: 5px 15px;
+}
+
+.search-group #search-text:focus {
+  background-color: #f7e7b9;
+}
+
+.search-group #search-text::placeholder {
+  font-size: 1rem;
+}
+
+.search-group #search-button {
+  max-width: 150px;
+  height: 40px;
+
+  font-size: 1rem;
+  padding: 5px 15px;
+
+  font-weight: 400;
+  color: rgb(17, 17, 17);
+
+  outline: none;
+  border: none;
+
+  border-radius: 0 5px 5px 0;
+
+  background-color: #3663ad;
+
+  transition: all 0.5s;
+
+  cursor: pointer;
+}
+
+.search-group #search-button:hover {
+  background-color: #356dc9;
+  color: #f7e7b9;
+}
+
+.container .info {
+  width: 90%;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ffc312;
+
+  border-radius: 0 0 15px 15px;
+}
+
+.info .info-details {
+  width: 60%;
+  height: 200px;
+
+  padding: 5px;
+
+  border-top: 4px solid #356dc9;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  background-color: #fff;
+}
+
+.info .info-details .image {
+  width: 80%;
+  height: 80px;
+
+  margin-bottom: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .info-details .image img {
+  width: 100px;
+  height: inherit;
+
+  margin-right: 15px;
+}
+
+.info .info-details .image h3 {
+  font-size: 1rem;
+
+  margin: 0;
+
+  position: relative;
+
+  padding: 5px 0;
+}
+
+.info .info-details .image h3::after {
+  content: "";
+
+  display: block;
+
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+  border-radius: 5px;
+
+  width: 130%;
+  height: 3px;
+  background-color: #356dc9;
+}
+
+.info .info-details fieldset legend {
+  font-size: 0.7rem;
+
+  font-weight: bold;
+}
+
+.info .info-details fieldset p {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+.info .info-details fieldset {
+  width: 22%;
+  height: 30px;
+
+  text-align: center;
+  line-height: 15px;
+
+  margin-right: 0px;
+  border: 2px solid #fccb39;
+
+  padding: 2px;
+
+  font-size: 0.8rem;
+}
+
+.info .info-details fieldset:nth-child(6) {
+  height: 50px;
+  width: 100%;
+
+  margin: 0;
+}
+
+.info .info-details fieldset:nth-child(6) p {
+  font-size: 0.8rem;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
