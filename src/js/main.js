@@ -8,6 +8,15 @@ const searchText = getElement("#search-text"),
   containerInfo = getElement(".info-details"),
   erroMenssage = getElement(".erro-message");
 
+document.addEventListener("keypress", (e) => {
+  if (e.code === "Enter") {
+    let pokeName = searchText.value.toLowerCase();
+    pokeInfoRequest(url, pokeName);
+
+    setTimeout(() => containerInfo.classList.remove("fade"), 3000);
+  }
+});
+
 searchButton.addEventListener("click", () => {
   let pokeName = searchText.value.toLowerCase();
   pokeInfoRequest(url, pokeName);
