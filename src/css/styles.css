@@ -41,6 +41,8 @@ body {
 
 .container .font-meme {
   margin-top: 10px;
+
+  cursor: pointer;
 }
 
 .container .search-group {

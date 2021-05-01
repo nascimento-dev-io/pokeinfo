@@ -10,6 +10,7 @@ const searchText = getElement("#search-text"),
 
 document.addEventListener("keypress", (e) => {
   if (e.code === "Enter") {
+    searchButton.click();
     searchButton.addEventListener("click", () => {
       let pokeName = searchText.value.toLowerCase();
       pokeInfoRequest(url, pokeName);
@@ -106,4 +107,15 @@ const showMessageError = (erro) => {
     "Verifique se digitou o nome do pokémon corretamente ( em inglês )";
   containerInfo.style.display = "none";
   console.log(erro);
+};
+
+const ClearDisplayCard = () => {
+  const elementsCard = getElementsCard();
+
+  elementsCard.forEach((element, index) => {
+    if (index === 0) {
+      element.src = "./src/imgs/pokebola.png";
+    }
+    element.innerHTML = "";
+  });
 };
