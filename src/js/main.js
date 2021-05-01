@@ -10,18 +10,13 @@ const searchText = getElement("#search-text"),
 
 document.addEventListener("keypress", (e) => {
   if (e.code === "Enter") {
-    let pokeName = searchText.value.toLowerCase();
-    pokeInfoRequest(url, pokeName);
+    searchButton.addEventListener("click", () => {
+      let pokeName = searchText.value.toLowerCase();
+      pokeInfoRequest(url, pokeName);
 
-    setTimeout(() => containerInfo.classList.remove("fade"), 3000);
+      setTimeout(() => containerInfo.classList.remove("fade"), 3000);
+    });
   }
-});
-
-searchButton.addEventListener("click", () => {
-  let pokeName = searchText.value.toLowerCase();
-  pokeInfoRequest(url, pokeName);
-
-  setTimeout(() => containerInfo.classList.remove("fade"), 3000);
 });
 
 const pokeInfoRequest = (url, pokeName) => {
