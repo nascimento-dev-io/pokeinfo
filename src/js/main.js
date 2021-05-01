@@ -9,7 +9,7 @@ const searchText = getElement("#search-text"),
   erroMenssage = getElement(".erro-message");
 
 document.addEventListener("keypress", (e) => {
-  if (e.code === "Enter") {
+  if (e.code == "Enter") {
     searchButton.click();
   }
 });
